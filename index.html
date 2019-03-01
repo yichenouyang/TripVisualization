@@ -74,12 +74,12 @@ a {
         <h2>Number</h2>
         <div class='row colors'></div>
         <div class='row labels'>
-            <div class='label'>0</div>
-            <div class='label'>1</div>
-            <div class='label'>2</div>
-            <div class='label'>3</div>
-            <div class='label'>4</div>
-            <div class='label'>5+</div>
+            <div class='label'>High</div>
+            <div class='label'></div>
+            <div class='label'></div>
+            <div class='label'></div>
+            <div class='label'></div>
+            <div class='label'>Low</div>
         </div>
     </div>
     <div class='session' id='sliderbar'>
@@ -123,8 +123,8 @@ a {
       property: 'qqqq',
       type: 'exponential',
       stops: [
-        [1, 0],
-        [62, 1]
+        [1, 0.01],
+        [15, 10]
       ]
     },
     // increase intensity as zoom level increases
@@ -148,16 +148,16 @@ a {
     // increase radius as zoom increases
     'heatmap-radius': {
       stops: [
-        [11, 8],
-        [15, 12]
+        [12, 5],
+        [15, 2]
       ]
     },
     // decrease opacity to transition into the circle layer
     'heatmap-opacity': {
-      default: 1,
+      default: 0.7,
       stops: [
-        [14, 1],
-        [15, 0]
+        [12, 0.95],
+        [16, 1]
       ]
     },
   }  
@@ -181,6 +181,6 @@ a {
     
     });
     
-    // Addd Time Slider
+ 
     
 </script>
